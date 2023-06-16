@@ -164,8 +164,6 @@
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
-  transition: box-shadow 0.15s ease-in-out;
   display: inline-block;
 }
 
@@ -280,6 +278,7 @@
 .shop-featured__main {
   flex-wrap: nowrap;
   overflow: auto;
+  scroll-snap-type: x mandatory;
 }
 
 .shop-category__item {

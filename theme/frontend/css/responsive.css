@@ -100,6 +100,8 @@
   }
   .shop-home .product-item:not(:last-child) {
     margin-right: 1.5rem;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
   }
 }
 @media screen and (max-width: 991px) {
