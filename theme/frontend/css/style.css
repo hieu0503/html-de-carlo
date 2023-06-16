@@ -295,7 +295,6 @@
 }
 
 .shop-category__item a {
-  color: var(--white);
   border: none;
   cursor: pointer;
 }
