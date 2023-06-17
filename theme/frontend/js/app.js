@@ -56,3 +56,47 @@ function togglePlayPause() {
 }
 
 playPauseBtn.addEventListener("click", togglePlayPause);
+
+// JS FAQ
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    // Lấy danh sách tab và tab links
+    var tabs = document.querySelectorAll(".tab");
+    var tabLinks = document.querySelectorAll(".tab-link");
+
+    // Hiển thị nội dung của Tab 1 khi trang được tải và thêm lớp active vào tab link và tab tương ứng
+    tabs[0].classList.add("active");
+    tabLinks[0].classList.add("active");
+});
+
+function changeTab(event, tabId) {
+    var tabs = document.querySelectorAll(".tab");
+    var tabLinks = document.querySelectorAll(".tab-link");
+
+    // Ẩn tất cả nội dung tab và xóa lớp active khỏi tất cả tab links
+    tabs.forEach(tab => tab.classList.remove("active"));
+    tabLinks.forEach(link => link.classList.remove("active"));
+
+    // Hiển thị nội dung tab được chọn và thêm lớp active vào tab link tương ứng
+    var selectedTab = document.getElementById(tabId);
+    var selectedTabLink = event.currentTarget;
+    selectedTab.classList.add("active");
+    selectedTabLink.classList.add("active");
+}
+
+function toggleAnswer(questionNumber) {
+    var answer = document.getElementById("answer" + questionNumber);
+    var otherAnswers = document.getElementsByClassName("answer");
+
+    for (let i = 0; i < otherAnswers.length; i++) {
+        if (otherAnswers[i] !== answer) {
+            otherAnswers[i].style.display = "none";
+        }
+    }
+
+    if (answer.style.display === "none") {
+        answer.style.display = "block";
+    } else {
+        answer.style.display = "none";
+    }
+}

@@ -14,7 +14,7 @@
     <header class="header">
         <div class="header-top">
             <div class="header-top__title">
-                <h5 class="h5">free shipping in italy</h5>
+                <p class="h5">free shipping in italy</p>
             </div>
             <div class="header-top__lang">
                 <div id="lang_sel">
@@ -22,12 +22,8 @@
                         <li class="nav-lang-item">
                             <a class="lang_sel_sel icl-it" href="#">Italian</a>
                             <ul class="icl-item">
-                                <li class="icl-item-lang icl-it">
-                                    <a href="#" class="lang-link">Italian</a>
-                                </li>
-                                <li class="icl-item-lang icl-en">
-                                    <a href="#" class="lang-link">English</a>
-                                </li>
+                                <li class="icl-item-lang icl-it"><a href="#" class="lang-link">Italian</a></li>
+                                <li class="icl-item-lang icl-en"><a href="#" class="lang-link">English</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -37,53 +33,43 @@
         <nav class="header-bottom navbar-expand-lg">
             <div class="header-logo">
                 <a class="inline-link" href="index.html"><img src="./theme/frontend/images/logo.png"
-                        class="header-logo-img" alt="logo" /></a>
+                        class="header-logo-img" alt="logo"></a>
             </div>
             <nav class="header-menu">
                 <ul class="menu-main d-flex">
-                    <li class="menu-item">
-                        <a class="menu-link" href="shop.html">Shop</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="ourHistory.html">Our History</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="careOfProduct.html">Jewelery Production</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="become.html">Become a dealer</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="contact.html">Contact</a>
-                    </li>
+                    <li class="menu-item"><a class="menu-link" href="shop.html">Shop</a></li>
+                    <li class="menu-item"><a class="menu-link" href="ourHistory.html">Our History</a></li>
+                    <li class="menu-item"><a class="menu-link" href="careOfProduct.html">Jewelery Production</a></li>
+                    <li class="menu-item"><a class="menu-link" href="become.html">Become a dealer</a></li>
+                    <li class="menu-item"><a class="menu-link" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-populated d-flex">
                 <div class="header-populated__item">
                     <div class="header-search">
                         <button class="button-primary button-search">
-                            <img src="./theme/frontend/images/search.png" alt="Search" />
+                            <img src="./theme/frontend/images/search.png" alt="Search">
                         </button>
                     </div>
                 </div>
                 <div class="header-populated__item">
                     <div class="header-love">
                         <button class="button-primary button-love">
-                            <img src="./theme/frontend/images/love.png" alt="Love" />
+                            <img src="./theme/frontend/images/love.png" alt="Love">
                         </button>
                     </div>
                 </div>
                 <div class="header-populated__item">
                     <div class="header-user">
                         <button class="button-primary button-user">
-                            <img src="./theme/frontend/images/user.png" alt="User" />
+                            <img src="./theme/frontend/images/user.png" alt="User">
                         </button>
                     </div>
                 </div>
                 <div class="header-populated__item">
                     <div class="header-bag">
                         <button class="button-primary button-bag">
-                            <img src="./theme/frontend/images/bag.png" alt="Bag" />
+                            <img src="./theme/frontend/images/bag.png" alt="Bag">
                         </button>
                     </div>
                 </div>
@@ -96,6 +82,509 @@
     </header>
 
     <main class="main">
+        <section class="banner-page text-center">
+            <h1 class="h2 banner-page-title">frequantly asked question uppercases</h1>
+        </section>
+        <section class="faq p100">
+            <div class="container-fluid">
+                <ul class="tab-header mb-60">
+                    <li class="tab-link uppercase active" onclick="changeTab(event, 'tab1')">purchase</li>
+                    <li class="tab-link uppercase" onclick="changeTab(event, 'tab2')">refund</li>
+                    <li class="tab-link uppercase" onclick="changeTab(event, 'tab3')">payment</li>
+                    <li class="tab-link uppercase" onclick="changeTab(event, 'tab4')">covid 19</li>
+                    <li class="tab-link uppercase" onclick="changeTab(event, 'tab5')">product</li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="tab1" class="tab active">
+                        <div class="tab-item">
+                            <h3 class="h4 question uppercase" onclick="toggleAnswer(1)">what are the shipping time and
+                                cost
+                                available of dercalo ?</h3>
+                            <div class="answer" id="answer1">
+                                <div class="answer-item mb-40">
+                                    <p class="answer-item__p description mb-20">Shipping costs are free on all orders.
+                                        Please
+                                        allow 8 working days for delivery.</p>
+                                    <p class="answer-item__p description">Information on Mother's Day shipping</p>
+                                </div>
+                                <div class="answer-item mb-50">
+                                    <div class="h5 answer-item__title uppercase mb-10">delivery</div>
+                                    <p class="answer-item__p description">To receive your order before Mother's Day,
+                                        please
+                                        make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="answer-item">
+                                    <div class="h5 answer-item__title uppercase mb-10">engravings</div>
+                                    <p class="answer-item__p description">
+                                        For orders with engravings, please place your order no later than 11:59 pm on
+                                        Wednesday 21st April for delivery before Mother's Day.
+                                        <br>
+                                        We remind you that we do not accept replacements and returns of orders that
+                                        include
+                                        engravings or any type of personalization.
+                                        <br>
+                                        Delivery of items with a personalization service may take longer. You can check
+                                        the
+                                        status of your order and its shipment by contacting the Customer Service on 800
+                                        935
+                                        547.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <h3 class="h4 question uppercase" onclick="toggleAnswer(2)">what are the shipping time and
+                                cost
+                                available of dercalo ?</h3>
+                            <div class="answer" id="answer2">
+                                <div class="answer-item mb-40">
+                                    <p class="answer-item__p description mb-20">Shipping costs are free on all orders.
+                                        Please
+                                        allow 8 working days for delivery.</p>
+                                    <p class="answer-item__p description">Information on Mother's Day shipping</p>
+                                </div>
+                                <div class="answer-item mb-50">
+                                    <div class="h5 answer-item__title uppercase mb-10">delivery</div>
+                                    <p class="answer-item__p description">To receive your order before Mother's Day,
+                                        please
+                                        make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="answer-item">
+                                    <div class="h5 answer-item__title uppercase mb-10">engravings</div>
+                                    <p class="answer-item__p description">
+                                        For orders with engravings, please place your order no later than 11:59 pm on
+                                        Wednesday 21st April for delivery before Mother's Day.
+                                        <br>
+                                        We remind you that we do not accept replacements and returns of orders that
+                                        include
+                                        engravings or any type of personalization.
+                                        <br>
+                                        Delivery of items with a personalization service may take longer. You can check
+                                        the
+                                        status of your order and its shipment by contacting the Customer Service on 800
+                                        935
+                                        547.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <h3 class="h4 question uppercase" onclick="toggleAnswer(3)">what are the shipping time and
+                                cost
+                                available of dercalo ?</h3>
+                            <div class="answer" id="answer3">
+                                <div class="answer-item mb-40">
+                                    <p class="answer-item__p description mb-20">Shipping costs are free on all orders.
+                                        Please
+                                        allow 8 working days for delivery.</p>
+                                    <p class="answer-item__p description">Information on Mother's Day shipping</p>
+                                </div>
+                                <div class="answer-item mb-50">
+                                    <div class="h5 answer-item__title uppercase mb-10">delivery</div>
+                                    <p class="answer-item__p description">To receive your order before Mother's Day,
+                                        please
+                                        make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="answer-item">
+                                    <div class="h5 answer-item__title uppercase mb-10">engravings</div>
+                                    <p class="answer-item__p description">
+                                        For orders with engravings, please place your order no later than 11:59 pm on
+                                        Wednesday 21st April for delivery before Mother's Day.
+                                        <br>
+                                        We remind you that we do not accept replacements and returns of orders that
+                                        include
+                                        engravings or any type of personalization.
+                                        <br>
+                                        Delivery of items with a personalization service may take longer. You can check
+                                        the
+                                        status of your order and its shipment by contacting the Customer Service on 800
+                                        935
+                                        547.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <h3 class="h4 question uppercase" onclick="toggleAnswer(4)">what are the shipping time and
+                                cost
+                                available of dercalo ?</h3>
+                            <div class="answer" id="answer4">
+                                <div class="answer-item mb-40">
+                                    <p class="answer-item__p description mb-20">Shipping costs are free on all orders.
+                                        Please
+                                        allow 8 working days for delivery.</p>
+                                    <p class="answer-item__p description">Information on Mother's Day shipping</p>
+                                </div>
+                                <div class="answer-item mb-50">
+                                    <div class="h5 answer-item__title uppercase mb-10">delivery</div>
+                                    <p class="answer-item__p description">To receive your order before Mother's Day,
+                                        please
+                                        make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="answer-item">
+                                    <div class="h5 answer-item__title uppercase mb-10">engravings</div>
+                                    <p class="answer-item__p description">
+                                        For orders with engravings, please place your order no later than 11:59 pm on
+                                        Wednesday 21st April for delivery before Mother's Day.
+                                        <br>
+                                        We remind you that we do not accept replacements and returns of orders that
+                                        include
+                                        engravings or any type of personalization.
+                                        <br>
+                                        Delivery of items with a personalization service may take longer. You can check
+                                        the
+                                        status of your order and its shipment by contacting the Customer Service on 800
+                                        935
+                                        547.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <h3 class="h4 question uppercase" onclick="toggleAnswer(5)">what are the shipping time and
+                                cost
+                                available of dercalo ?</h3>
+                            <div class="answer" id="answer5">
+                                <div class="answer-item mb-40">
+                                    <p class="answer-item__p description mb-20">Shipping costs are free on all orders.
+                                        Please
+                                        allow 8 working days for delivery.</p>
+                                    <p class="answer-item__p description">Information on Mother's Day shipping</p>
+                                </div>
+                                <div class="answer-item mb-50">
+                                    <div class="h5 answer-item__title uppercase mb-10">delivery</div>
+                                    <p class="answer-item__p description">To receive your order before Mother's Day,
+                                        please
+                                        make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="answer-item">
+                                    <div class="h5 answer-item__title uppercase mb-10">engravings</div>
+                                    <p class="answer-item__p description">
+                                        For orders with engravings, please place your order no later than 11:59 pm on
+                                        Wednesday 21st April for delivery before Mother's Day.
+                                        <br>
+                                        We remind you that we do not accept replacements and returns of orders that
+                                        include
+                                        engravings or any type of personalization.
+                                        <br>
+                                        Delivery of items with a personalization service may take longer. You can check
+                                        the
+                                        status of your order and its shipment by contacting the Customer Service on 800
+                                        935
+                                        547.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab2" class="tab">
+                        <div class="tab-item">
+                            <h3 class="h4 question uppercase" onclick="toggleAnswer(6)">what are the shipping time and
+                                cost
+                                available of dercalo ?</h3>
+                            <div class="answer" id="answer6">
+                                <div class="answer-item mb-40">
+                                    <p class="answer-item__p description mb-20">Shipping costs are free on all orders.
+                                        Please
+                                        allow 8 working days for delivery.</p>
+                                    <p class="answer-item__p description">Information on Mother's Day shipping</p>
+                                </div>
+                                <div class="answer-item mb-50">
+                                    <div class="h5 answer-item__title uppercase mb-10">delivery</div>
+                                    <p class="answer-item__p description">To receive your order before Mother's Day,
+                                        please
+                                        make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="answer-item">
+                                    <div class="h5 answer-item__title uppercase mb-10">engravings</div>
+                                    <p class="answer-item__p description">
+                                        For orders with engravings, please place your order no later than 11:59 pm on
+                                        Wednesday 21st April for delivery before Mother's Day.
+                                        <br>
+                                        We remind you that we do not accept replacements and returns of orders that
+                                        include
+                                        engravings or any type of personalization.
+                                        <br>
+                                        Delivery of items with a personalization service may take longer. You can check
+                                        the
+                                        status of your order and its shipment by contacting the Customer Service on 800
+                                        935
+                                        547.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <h3 class="h4 question uppercase" onclick="toggleAnswer(7)">what are the shipping time and
+                                cost
+                                available of dercalo ?</h3>
+                            <div class="answer" id="answer7">
+                                <div class="answer-item mb-40">
+                                    <p class="answer-item__p description mb-20">Shipping costs are free on all orders.
+                                        Please
+                                        allow 8 working days for delivery.</p>
+                                    <p class="answer-item__p description">Information on Mother's Day shipping</p>
+                                </div>
+                                <div class="answer-item mb-50">
+                                    <div class="h5 answer-item__title uppercase mb-10">delivery</div>
+                                    <p class="answer-item__p description">To receive your order before Mother's Day,
+                                        please
+                                        make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="answer-item">
+                                    <div class="h5 answer-item__title uppercase mb-10">engravings</div>
+                                    <p class="answer-item__p description">
+                                        For orders with engravings, please place your order no later than 11:59 pm on
+                                        Wednesday 21st April for delivery before Mother's Day.
+                                        <br>
+                                        We remind you that we do not accept replacements and returns of orders that
+                                        include
+                                        engravings or any type of personalization.
+                                        <br>
+                                        Delivery of items with a personalization service may take longer. You can check
+                                        the
+                                        status of your order and its shipment by contacting the Customer Service on 800
+                                        935
+                                        547.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab3" class="tab">
+                        <div class="tab-item">
+                            <h3 class="h4 question uppercase" onclick="toggleAnswer(8)">what are the shipping time and
+                                cost
+                                available of dercalo ?</h3>
+                            <div class="answer" id="answer8">
+                                <div class="answer-item mb-40">
+                                    <p class="answer-item__p description mb-20">Shipping costs are free on all orders.
+                                        Please
+                                        allow 8 working days for delivery.</p>
+                                    <p class="answer-item__p description">Information on Mother's Day shipping</p>
+                                </div>
+                                <div class="answer-item mb-50">
+                                    <div class="h5 answer-item__title uppercase mb-10">delivery</div>
+                                    <p class="answer-item__p description">To receive your order before Mother's Day,
+                                        please
+                                        make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="answer-item">
+                                    <div class="h5 answer-item__title uppercase mb-10">engravings</div>
+                                    <p class="answer-item__p description">
+                                        For orders with engravings, please place your order no later than 11:59 pm on
+                                        Wednesday 21st April for delivery before Mother's Day.
+                                        <br>
+                                        We remind you that we do not accept replacements and returns of orders that
+                                        include
+                                        engravings or any type of personalization.
+                                        <br>
+                                        Delivery of items with a personalization service may take longer. You can check
+                                        the
+                                        status of your order and its shipment by contacting the Customer Service on 800
+                                        935
+                                        547.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <h3 class="h4 question uppercase" onclick="toggleAnswer(9)">what are the shipping time and
+                                cost
+                                available of dercalo ?</h3>
+                            <div class="answer" id="answer9">
+                                <div class="answer-item mb-40">
+                                    <p class="answer-item__p description mb-20">Shipping costs are free on all orders.
+                                        Please
+                                        allow 8 working days for delivery.</p>
+                                    <p class="answer-item__p description">Information on Mother's Day shipping</p>
+                                </div>
+                                <div class="answer-item mb-50">
+                                    <div class="h5 answer-item__title uppercase mb-10">delivery</div>
+                                    <p class="answer-item__p description">To receive your order before Mother's Day,
+                                        please
+                                        make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="answer-item">
+                                    <div class="h5 answer-item__title uppercase mb-10">engravings</div>
+                                    <p class="answer-item__p description">
+                                        For orders with engravings, please place your order no later than 11:59 pm on
+                                        Wednesday 21st April for delivery before Mother's Day.
+                                        <br>
+                                        We remind you that we do not accept replacements and returns of orders that
+                                        include
+                                        engravings or any type of personalization.
+                                        <br>
+                                        Delivery of items with a personalization service may take longer. You can check
+                                        the
+                                        status of your order and its shipment by contacting the Customer Service on 800
+                                        935
+                                        547.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <h3 class="h4 question uppercase" onclick="toggleAnswer(10)">what are the shipping time and
+                                cost
+                                available of dercalo ?</h3>
+                            <div class="answer" id="answer10">
+                                <div class="answer-item mb-40">
+                                    <p class="answer-item__p description mb-20">Shipping costs are free on all orders.
+                                        Please
+                                        allow 8 working days for delivery.</p>
+                                    <p class="answer-item__p description">Information on Mother's Day shipping</p>
+                                </div>
+                                <div class="answer-item mb-50">
+                                    <div class="h5 answer-item__title uppercase mb-10">delivery</div>
+                                    <p class="answer-item__p description">To receive your order before Mother's Day,
+                                        please
+                                        make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="answer-item">
+                                    <div class="h5 answer-item__title uppercase mb-10">engravings</div>
+                                    <p class="answer-item__p description">
+                                        For orders with engravings, please place your order no later than 11:59 pm on
+                                        Wednesday 21st April for delivery before Mother's Day.
+                                        <br>
+                                        We remind you that we do not accept replacements and returns of orders that
+                                        include
+                                        engravings or any type of personalization.
+                                        <br>
+                                        Delivery of items with a personalization service may take longer. You can check
+                                        the
+                                        status of your order and its shipment by contacting the Customer Service on 800
+                                        935
+                                        547.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab4" class="tab">
+                        <div class="tab-item">
+                            <h3 class="h4 question uppercase" onclick="toggleAnswer(11)">what are the shipping time and
+                                cost
+                                available of dercalo ?</h3>
+                            <div class="answer" id="answer11">
+                                <div class="answer-item mb-40">
+                                    <p class="answer-item__p description mb-20">Shipping costs are free on all orders.
+                                        Please
+                                        allow 8 working days for delivery.</p>
+                                    <p class="answer-item__p description">Information on Mother's Day shipping</p>
+                                </div>
+                                <div class="answer-item mb-50">
+                                    <div class="h5 answer-item__title uppercase mb-10">delivery</div>
+                                    <p class="answer-item__p description">To receive your order before Mother's Day,
+                                        please
+                                        make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="answer-item">
+                                    <div class="h5 answer-item__title uppercase mb-10">engravings</div>
+                                    <p class="answer-item__p description">
+                                        For orders with engravings, please place your order no later than 11:59 pm on
+                                        Wednesday 21st April for delivery before Mother's Day.
+                                        <br>
+                                        We remind you that we do not accept replacements and returns of orders that
+                                        include
+                                        engravings or any type of personalization.
+                                        <br>
+                                        Delivery of items with a personalization service may take longer. You can check
+                                        the
+                                        status of your order and its shipment by contacting the Customer Service on 800
+                                        935
+                                        547.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab5" class="tab">
+                        <div class="tab-item">
+                            <h3 class="h4 question uppercase" onclick="toggleAnswer(12)">what are the shipping time and
+                                cost
+                                available of dercalo ?</h3>
+                            <div class="answer" id="answer12">
+                                <div class="answer-item mb-40">
+                                    <p class="answer-item__p description mb-20">Shipping costs are free on all orders.
+                                        Please
+                                        allow 8 working days for delivery.</p>
+                                    <p class="answer-item__p description">Information on Mother's Day shipping</p>
+                                </div>
+                                <div class="answer-item mb-50">
+                                    <div class="h5 answer-item__title uppercase mb-10">delivery</div>
+                                    <p class="answer-item__p description">To receive your order before Mother's Day,
+                                        please
+                                        make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="answer-item">
+                                    <div class="h5 answer-item__title uppercase mb-10">engravings</div>
+                                    <p class="answer-item__p description">
+                                        For orders with engravings, please place your order no later than 11:59 pm on
+                                        Wednesday 21st April for delivery before Mother's Day.
+                                        <br>
+                                        We remind you that we do not accept replacements and returns of orders that
+                                        include
+                                        engravings or any type of personalization.
+                                        <br>
+                                        Delivery of items with a personalization service may take longer. You can check
+                                        the
+                                        status of your order and its shipment by contacting the Customer Service on 800
+                                        935
+                                        547.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <h3 class="h4 question uppercase" onclick="toggleAnswer(13)">what are the shipping time and
+                                cost
+                                available of dercalo ?</h3>
+                            <div class="answer" id="answer13">
+                                <div class="answer-item mb-40">
+                                    <p class="answer-item__p description mb-20">Shipping costs are free on all orders.
+                                        Please
+                                        allow 8 working days for delivery.</p>
+                                    <p class="answer-item__p description">Information on Mother's Day shipping</p>
+                                </div>
+                                <div class="answer-item mb-50">
+                                    <div class="h5 answer-item__title uppercase mb-10">delivery</div>
+                                    <p class="answer-item__p description">To receive your order before Mother's Day,
+                                        please
+                                        make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="answer-item">
+                                    <div class="h5 answer-item__title uppercase mb-10">engravings</div>
+                                    <p class="answer-item__p description">
+                                        For orders with engravings, please place your order no later than 11:59 pm on
+                                        Wednesday 21st April for delivery before Mother's Day.
+                                        <br>
+                                        We remind you that we do not accept replacements and returns of orders that
+                                        include
+                                        engravings or any type of personalization.
+                                        <br>
+                                        Delivery of items with a personalization service may take longer. You can check
+                                        the
+                                        status of your order and its shipment by contacting the Customer Service on 800
+                                        935
+                                        547.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="any-question text-center mt-100">
+                    <p class="any-question__p">Do you have any other questions? <a class="any-question__link text-underline" href="contact.html">Contact us now</a></p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
@@ -103,7 +592,7 @@
             <div class="footer-top">
                 <div class="footer-logo">
                     <a href="index.html" class="footer-logo-link">
-                        <img src="./theme/frontend/images/logo-2.png" alt="logo" class="footer-logo-img" />
+                        <img src="./theme/frontend/images/logo-2.png" alt="logo" class="footer-logo-img">
                     </a>
                 </div>
             </div>
@@ -111,110 +600,80 @@
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3 order-2 mb-60-m">
                         <div class="footer-mid__item">
-                            <h5 class="footer-mid__item-title">
-                                customer care
-                            </h5>
+                            <h2 class="footer-mid__item-title">customer care</h2>
                             <div class="footer-mid__item-des">
                                 <ul>
-                                    <li class="footer__item-des-item">
-                                        <a href="#" class="footer-mid__text">Track your order</a>
-                                    </li>
-                                    <li class="footer__item-des-item">
-                                        <a href="#" class="footer-mid__text">Frequent Question</a>
-                                    </li>
+                                    <li class="footer__item-des-item"><a href="#" class="footer-mid__text">Track your
+                                            order</a></li>
+                                    <li class="footer__item-des-item"><a href="#" class="footer-mid__text">Frequent
+                                            question uppercase</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 order-3 mb-60-m">
+
                         <div class="footer-mid__item">
-                            <h5 class="footer-mid__item-title">
-                                legal infomation:
-                            </h5>
+                            <h2 class="footer-mid__item-title">legal infomation:</h2>
                             <div class="footer-mid__item-des">
                                 <ul>
                                     <li class="footer__item-des-item">
-                                        <p class="footer-mid__text">
-                                            Company name: De Carlo Nicholas
-                                        </p>
+                                        <p class="footer-mid__text">Company name: De Carlo Nicholas</p>
                                     </li>
                                     <li class="footer__item-des-item">
-                                        <p class="footer-mid__text">
-                                            VAT number: 07020260480
-                                        </p>
+                                        <p class="footer-mid__text">VAT number: 07020260480</p>
                                     </li>
                                     <li class="footer__item-des-item">
-                                        <p class="footer-mid__text">
-                                            REA: FI-674952
-                                        </p>
+                                        <p class="footer-mid__text">REA: FI-674952</p>
                                     </li>
                                     <li class="footer__item-des-item">
-                                        <p class="footer-mid__text">
-                                            Registered office: Via di San<br />
-                                            Quirico a Ruballa 15, 50012,<br />
-                                            Bagno a Ripoli (FI), Italy
-                                        </p>
+                                        <p class="footer-mid__text">Registered office: Via di San<br>
+                                            Quirico a Ruballa 15, 50012,<br>
+                                            Bagno a Ripoli (FI), Italy</p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 order-4">
+
                         <div class="footer-mid__item">
-                            <h5 class="footer-mid__item-title">
-                                legal terms
-                            </h5>
+                            <h2 class="footer-mid__item-title">legal terms</h2>
                             <div class="footer-mid__item-des">
                                 <ul>
-                                    <li class="footer__item-des-item">
-                                        <a href="#" class="footer-mid__text">Informazioni legali</a>
-                                    </li>
-                                    <li class="footer__item-des-item">
-                                        <a href="#" class="footer-mid__text">Condizioni generali di vendita</a>
-                                    </li>
-                                    <li class="footer__item-des-item">
-                                        <a href="#" class="footer-mid__text">Informativa sulla privacy</a>
-                                    </li>
-                                    <li class="footer__item-des-item">
-                                        <a href="#" class="footer-mid__text">Cookie policy</a>
-                                    </li>
+                                    <li class="footer__item-des-item"><a href="#" class="footer-mid__text">Informazioni
+                                            legali</a></li>
+                                    <li class="footer__item-des-item"><a href="#" class="footer-mid__text">Condizioni
+                                            generali di vendita</a></li>
+                                    <li class="footer__item-des-item"><a href="#" class="footer-mid__text">Informativa
+                                            sulla privacy</a></li>
+                                    <li class="footer__item-des-item"><a href="#" class="footer-mid__text">Cookie
+                                            policy</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 order-1 mb-60-m">
                         <div class="footer-mid__item">
-                            <h5 class="footer-mid__item-title">
-                                subscribe for newletter
-                            </h5>
+                            <h2 class="footer-mid__item-title">subscribe for newletter</h2>
                             <div class="footer-mid__item-des">
                                 <form action="" class="form-footer">
-                                    <input class="form-input h5 form-control" type="email" name="email"
-                                        class="footer-input" id="" placeholder="Your Email" />
-                                    <button type="submit" class="footer-button">
-                                        Subscribe
-                                    </button>
+                                    <input type="email" name="email" class="footer-input" id=""
+                                        placeholder="Your Email">
+                                    <button type="submit" class="footer-button">Subscribe</button>
                                 </form>
                             </div>
-                            <h5 class="footer-mid__item-title">social</h5>
+                            <h2 class="footer-mid__item-title">social</h2>
                             <div class="footer-social">
                                 <ul class="footer-social-ul d-flex">
-                                    <li class="footer-social-li">
-                                        <a href="#" class="footer-social-link"><img src="./theme/frontend/images/fb.png"
-                                                alt="" /></a>
-                                    </li>
-                                    <li class="footer-social-li">
-                                        <a href="#" class="footer-social-link"><img src="./theme/frontend/images/ig.png"
-                                                alt="" /></a>
-                                    </li>
-                                    <li class="footer-social-li">
-                                        <a href="#" class="footer-social-link"><img src="./theme/frontend/images/in.png"
-                                                alt="" /></a>
-                                    </li>
-                                    <li class="footer-social-li">
-                                        <a href="#" class="footer-social-link"><img
-                                                src="./theme/frontend/images/youtube.png" alt="" /></a>
-                                    </li>
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                                src="./theme/frontend/images/fb.png" alt=""></a></li>
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                                src="./theme/frontend/images/ig.png" alt=""></a></li>
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                                src="./theme/frontend/images/in.png" alt=""></a></li>
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                                src="./theme/frontend/images/youtube.png" alt=""></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -223,8 +682,7 @@
             </div>
             <div class="footer-bottom">
                 <p class="footer-bottom__text">
-                    De Carlo Nicholas- VAT number: 07020260480- REA:
-                    FI-674952 - Registered office: Via di San Quirico a
+                    De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a
                     Ruballa 15, 50012, Bagno a Ripoli (FI), Italy
                 </p>
             </div>
