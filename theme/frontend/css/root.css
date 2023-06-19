@@ -170,6 +170,11 @@ h5,
 .mb-30 {
   margin-bottom: 30px;
 }
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
@@ -204,6 +209,10 @@ h5,
 
 .mt-50 {
   margin-top: 50px;
+}
+
+.mt-80 {
+  margin-top: 80px;
 }
 
 .mt-100 {

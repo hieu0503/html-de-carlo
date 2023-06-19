@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Carlo - Product detail</title>
+    <link rel="stylesheet" href="./theme/frontend/css/root.css">
+    <link rel="stylesheet" href="./theme/frontend/css/style.css">
+    <link rel="stylesheet" href="./theme/frontend/css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top__title">
+                <p class="h5">free shipping in italy</p>
+            </div>
+            <div class="header-top__lang">
+                <div id="lang_sel">
+                    <ul class="nav-lang">
+                        <li class="nav-lang-item">
+                            <a class="lang_sel_sel icl-it" href="#">Italian</a>
+                            <ul class="icl-item">
+                                <li class="icl-item-lang icl-it"><a href="#" class="lang-link">Italian</a></li>
+                                <li class="icl-item-lang icl-en"><a href="#" class="lang-link">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="header-bottom navbar-expand-lg">
+            <div class="header-logo">
+                <a class="inline-link" href="index.html"><img src="./theme/frontend/images/logo.png"
+                        class="header-logo-img" alt="logo"></a>
+            </div>
+            <nav class="header-menu">
+                <ul class="menu-main d-flex">
+                    <li class="menu-item"><a class="menu-link" href="shop.html">Shop</a></li>
+                    <li class="menu-item"><a class="menu-link" href="ourHistory.html">Our History</a></li>
+                    <li class="menu-item"><a class="menu-link" href="careOfProduct.html">Jewelery Production</a></li>
+                    <li class="menu-item"><a class="menu-link" href="become.html">Become a dealer</a></li>
+                    <li class="menu-item"><a class="menu-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-populated d-flex">
+                <div class="header-populated__item">
+                    <div class="header-search">
+                        <button class="button-primary button-search">
+                            <img src="./theme/frontend/images/search.png" alt="Search">
+                        </button>
+                    </div>
+                </div>
+                <div class="header-populated__item">
+                    <div class="header-love">
+                        <button class="button-primary button-love">
+                            <img src="./theme/frontend/images/love.png" alt="Love">
+                        </button>
+                    </div>
+                </div>
+                <div class="header-populated__item">
+                    <div class="header-user">
+                        <button class="button-primary button-user">
+                            <img src="./theme/frontend/images/user.png" alt="User">
+                        </button>
+                    </div>
+                </div>
+                <div class="header-populated__item">
+                    <div class="header-bag">
+                        <button class="button-primary button-bag">
+                            <img src="./theme/frontend/images/bag.png" alt="Bag">
+                        </button>
+                    </div>
+                </div>
+                <button class="header-button navbar-toggler collapsed" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="overlay"></div>
+    </header>
+
+    <main class="main">
+        <section class="breadcrumb-main mt-100 mb-60">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a class="breadcrumb-item uppercase breadcrumb-link" href="index.html">Home</a>
+                    <a class="breadcrumb-item uppercase breadcrumb-link" href="careOfProduct.html">Ring</a>
+                    <span class="breadcrumb-item uppercase breadcrumb-span">Product name</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="product-detail-main d-flex">
+                    <div class="product-detail-slider">
+                        <div class="slider">
+                            <img src="./theme/frontend/images/pd1.png" alt="Large Image 1">
+                            <img src="./theme/frontend/images/pd2.png" alt="Large Image 2">
+                            <img src="./theme/frontend/images/pd3.png" alt="Large Image 3">
+                        </div>
+                        
+                        <div class="thumb-slider">
+                            <img src="./theme/frontend/images/pd1.png" alt="Thumb Image 1">
+                            <img src="./theme/frontend/images/pd2.png" alt="Thumb Image 2">
+                            <img src="./theme/frontend/images/pd3.png" alt="Thumb Image 3">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <h1 class="h1 mb-20 product-title">Product Name</h1>
+                        <p class="product-price mb-50">$99.99</p>
+                        <div class="product-size mb-40">
+                            <div class="product-size__text d-flex">
+                                <div class="product-size__title uppercase">size</div>
+                                <a href="#" class="product-size__link">Find your size</a>
+                            </div>
+                            <select class="product-size__size">
+                                <option value="" checked>50</option>
+                                <option value="">51</option>
+                                <option value="">52</option>
+                            </select>
+                        </div>
+                        <div class="product-button d-flex mb-30">
+
+                        </div>
+                        <div class="apr mb-50 uppercase">get this product by 1st apr !</div>
+                        <div class="description product-description">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudanm, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                            beatae vitae dicta sunt explicabo
+                        </div>
+                        <div class="h5 product-gift mb-30">
+                            our gift box exclusively for you
+                        </div>
+                        <img src="./theme/frontend/images/gift.png" alt="" class="product-gift-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="profuct-tab p100">
+            <div class="container">
+                <ul class="tab-header tab-product mb-60">
+                    <li class="tab-link uppercase active" onclick="changeTab(event, 'tab1')">product information</li>
+                    <li class="tab-link uppercase" onclick="changeTab(event, 'tab2')">our service</li>
+                    <li class="tab-link uppercase" onclick="changeTab(event, 'tab3')">payment method</li>
+                </ul>
+                <div class="tab-content mt-80 mb-80">
+                    <div id="tab1" class="tab active">
+                        <div class="tab-content-main d-flex">
+                            <div class="tab-content-left">
+                                <div class="tab-content-title uppercase mb-35">product info</div>
+                                <ul class="tab-content-ul">
+                                    <li class="tab-content-li h5">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                    <li class="tab-content-li h5">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                    <li class="tab-content-li h5">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                    <li class="tab-content-li h5">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                </ul>
+                            </div>
+                            <div class="tab-content-right">
+                                <img src="./theme/frontend/images/tab-content.png" alt="" class="tab-content-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab2" class="tab">
+                        <div class="tab-content-main d-flex">
+                            <div class="tab-content-left">
+                                <div class="tab-content-title uppercase mb-35">product info</div>
+                                <ul class="tab-content-ul">
+                                    <li class="tab-content-li h5">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                    <li class="tab-content-li h5">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                    <li class="tab-content-li h5">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                    <li class="tab-content-li h5">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                </ul>
+                            </div>
+                            <div class="tab-content-right">
+                                <img src="./theme/frontend/images/tab-content.png" alt="" class="tab-content-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab3" class="tab">
+                        <div class="tab-content-main d-flex">
+                            <div class="tab-content-left">
+                                <div class="tab-content-title uppercase mb-35">product info</div>
+                                <ul class="tab-content-ul">
+                                    <li class="tab-content-li h5">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                    <li class="tab-content-li h5">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                    <li class="tab-content-li h5">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                    <li class="tab-content-li h5">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                </ul>
+                            </div>
+                            <div class="tab-content-right">
+                                <img src="./theme/frontend/images/tab-content.png" alt="" class="tab-content-img">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="related-product">
+            <div class="container">
+                <h2 class="h1 text-center uppercase mb-45 related-product__title">
+                    related product
+                </h2>
+                <div class="shop-collection shop-main">
+                    <div class="product-item">
+                        <img src="./theme/frontend/images/product.png" alt="">
+                        <div class="product-love">
+                            <button class="button-primary"><img class="img-love" src="./theme/frontend/images/love.png"
+                                    alt=""></button>
+                        </div>
+                        <div class="product-item__content">
+                            <h4 class="product-name h5 mb-20">
+                                Product Name
+                            </h4>
+                            <p class="price">$99.99</p>
+                            <a href="shop.html" class="btn btn-border">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./theme/frontend/images/product.png" alt="">
+                        <div class="product-love">
+                            <button class="button-primary"><img class="img-love" src="./theme/frontend/images/love.png"
+                                    alt=""></button>
+                        </div>
+                        <div class="product-item__content">
+                            <h4 class="product-name h5 mb-20">
+                                Product Name
+                            </h4>
+                            <p class="price">$99.99</p>
+                            <a href="shop.html" class="btn btn-border">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./theme/frontend/images/product.png" alt="">
+                        <div class="product-love">
+                            <button class="button-primary"><img class="img-love" src="./theme/frontend/images/love.png"
+                                    alt=""></button>
+                        </div>
+                        <div class="product-item__content">
+                            <h4 class="product-name h5 mb-20">
+                                Product Name
+                            </h4>
+                            <p class="price">$99.99</p>
+                            <a href="shop.html" class="btn btn-border">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./theme/frontend/images/product.png" alt="">
+                        <div class="product-love">
+                            <button class="button-primary"><img class="img-love" src="./theme/frontend/images/love.png"
+                                    alt=""></button>
+                        </div>
+                        <div class="product-item__content">
+                            <h4 class="product-name h5 mb-20">
+                                Product Name
+                            </h4>
+                            <p class="price">$99.99</p>
+                            <a href="shop.html" class="btn btn-border">Add to cart</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="service p100 mt-100">
+            <div class="container">
+                <h2 class="h1 cl-primary mb-45 text-center">our services</h2>
+                <div class="service-main">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="service-item mb-20">
+                                <img src="./theme/frontend/images/parcel 1.png" alt="">
+                                <h3 class="product-name h4 mb-10 mt-30">
+                                    free shipping in italy
+                                </h3>
+                                <p class="price">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a href="shop.html" class="btn btn-service">read more <img
+                                        src="./theme/frontend/images/readmore.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="service-item mb-20">
+                                <img src="./theme/frontend/images/parcel 1.png" alt="">
+                                <h3 class="product-name h4 mb-10 mt-30">
+                                    free shipping in italy
+                                </h3>
+                                <p class="price">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a href="shop.html" class="btn btn-service">read more <img
+                                        src="./theme/frontend/images/readmore.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="service-item mb-20">
+                                <img src="./theme/frontend/images/parcel 1.png" alt="">
+                                <h3 class="product-name h4 mb-10 mt-30">
+                                    free shipping in italy
+                                </h3>
+                                <p class="price">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a href="shop.html" class="btn btn-service">read more <img
+                                        src="./theme/frontend/images/readmore.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="service-item mb-20">
+                                <img src="./theme/frontend/images/parcel 1.png" alt="">
+                                <h3 class="product-name h4 mb-10 mt-30">
+                                    free shipping in italy
+                                </h3>
+                                <p class="price">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a href="shop.html" class="btn btn-service">read more <img
+                                        src="./theme/frontend/images/readmore.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="./theme/frontend/images/logo-2.png" alt="logo" class="footer-logo-img">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-mid">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 order-2 mb-60-m">
+                        <div class="footer-mid__item">
+                            <h2 class="footer-mid__item-title">customer care</h2>
+                            <div class="footer-mid__item-des">
+                                <ul>
+                                    <li class="footer__item-des-item"><a href="#" class="footer-mid__text">Track your
+                                            order</a></li>
+                                    <li class="footer__item-des-item"><a href="#" class="footer-mid__text">Frequent
+                                            Question</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 order-3 mb-60-m">
+
+                        <div class="footer-mid__item">
+                            <h2 class="footer-mid__item-title">legal infomation:</h2>
+                            <div class="footer-mid__item-des">
+                                <ul>
+                                    <li class="footer__item-des-item">
+                                        <p class="footer-mid__text">Company name: De Carlo Nicholas</p>
+                                    </li>
+                                    <li class="footer__item-des-item">
+                                        <p class="footer-mid__text">VAT number: 07020260480</p>
+                                    </li>
+                                    <li class="footer__item-des-item">
+                                        <p class="footer-mid__text">REA: FI-674952</p>
+                                    </li>
+                                    <li class="footer__item-des-item">
+                                        <p class="footer-mid__text">Registered office: Via di San<br>
+                                            Quirico a Ruballa 15, 50012,<br>
+                                            Bagno a Ripoli (FI), Italy</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 order-4">
+
+                        <div class="footer-mid__item">
+                            <h2 class="footer-mid__item-title">legal terms</h2>
+                            <div class="footer-mid__item-des">
+                                <ul>
+                                    <li class="footer__item-des-item"><a href="#" class="footer-mid__text">Informazioni
+                                            legali</a></li>
+                                    <li class="footer__item-des-item"><a href="#" class="footer-mid__text">Condizioni
+                                            generali di vendita</a></li>
+                                    <li class="footer__item-des-item"><a href="#" class="footer-mid__text">Informativa
+                                            sulla privacy</a></li>
+                                    <li class="footer__item-des-item"><a href="#" class="footer-mid__text">Cookie
+                                            policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 order-1 mb-60-m">
+                        <div class="footer-mid__item">
+                            <h2 class="footer-mid__item-title">subscribe for newletter</h2>
+                            <div class="footer-mid__item-des">
+                                <form action="" class="form-footer">
+                                    <input type="email" name="email" class="footer-input" id=""
+                                        placeholder="Your Email">
+                                    <button type="submit" class="footer-button">Subscribe</button>
+                                </form>
+                            </div>
+                            <h2 class="footer-mid__item-title">social</h2>
+                            <div class="footer-social">
+                                <ul class="footer-social-ul d-flex">
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                                src="./theme/frontend/images/fb.png" alt=""></a></li>
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                                src="./theme/frontend/images/ig.png" alt=""></a></li>
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                                src="./theme/frontend/images/in.png" alt=""></a></li>
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                                src="./theme/frontend/images/youtube.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__text">
+                    De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a
+                    Ruballa 15, 50012, Bagno a Ripoli (FI), Italy
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./theme/frontend/js/app.js" type="text/javascript"></script>
+</body>
+
+</html>

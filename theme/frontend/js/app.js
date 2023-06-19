@@ -87,16 +87,53 @@ function changeTab(event, tabId) {
 function toggleAnswer(questionNumber) {
     var answer = document.getElementById("answer" + questionNumber);
     var otherAnswers = document.getElementsByClassName("answer");
+    var path2s = document.getElementsByClassName("path2");
 
     for (let i = 0; i < otherAnswers.length; i++) {
         if (otherAnswers[i] !== answer) {
             otherAnswers[i].style.display = "none";
+            path2s[i].style.transform = "rotate(90deg)";
         }
     }
 
     if (answer.style.display === "none") {
         answer.style.display = "block";
+        path2s[questionNumber - 1].style.transform = "rotate(0deg)";
     } else {
         answer.style.display = "none";
+        path2s[questionNumber - 1].style.transform = "rotate(90deg)";
     }
 }
+
+
+// product detail
+
+document.addEventListener("DOMContentLoaded", () => {
+    const slider = document.querySelector(".slider");
+    const slides = Array.from(slider.getElementsByTagName("img"));
+    const thumbSlider = document.querySelector(".thumb-slider");
+    const thumbSlides = Array.from(thumbSlider.getElementsByTagName("img"));
+
+    let currentIndex = 0;
+
+    const setActiveSlide = (index) => {
+        slides.forEach((slide) => {
+            slide.style.opacity = "0";
+        });
+        slides[index].style.opacity = "1";
+
+        thumbSlides.forEach((thumbSlide) => {
+            thumbSlide.classList.remove("active");
+        });
+        thumbSlides[index].classList.add("active");
+    };
+
+    thumbSlides.forEach((thumbSlide, index) => {
+        thumbSlide.addEventListener("click", () => {
+            currentIndex = index;
+            setActiveSlide(currentIndex);
+        });
+    });
+
+    setActiveSlide(currentIndex);
+});

@@ -175,6 +175,9 @@
   .mb-45 {
     margin-bottom: 2rem;
   }
+  .mb-60 {
+    margin-bottom: 30px;
+  }
   .slider-slide__item {
     bottom: 1.5rem;
   }
@@ -263,6 +266,20 @@
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 40px;
+  }
+
+  .tab-header {
+    justify-content: flex-start;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .tab-item {
+    padding: 20px 0;
+  }
+
+  .question {
+    padding-right: 39px;
   }
 }
 
