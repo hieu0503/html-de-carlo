@@ -284,6 +284,10 @@ h5,
   display: block;
 }
 
+.d-grid {
+  display: grid;
+}
+
 .button-primary {
   border: none;
   background: transparent;

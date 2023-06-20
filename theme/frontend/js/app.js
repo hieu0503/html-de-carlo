@@ -1,8 +1,8 @@
 // JS cho menu mobile
 
-var menuIcon = document.querySelector('.header-button');
-var menu = document.querySelector('.header-menu');
-var overlay = document.querySelector('.overlay');
+const menuIcon = document.querySelector('.header-button');
+const menu = document.querySelector('.header-menu');
+const overlay = document.querySelector('.overlay');
 
 menuIcon.addEventListener('click', () => {
     menu.classList.toggle('active');
@@ -16,8 +16,8 @@ overlay.addEventListener('click', () => {
 })
 
 // JavaScript cho slider
-var slideIndex = 0;
-var slides = document.getElementsByClassName('slider-slide');
+let slideIndex = 0;
+const slides = document.getElementsByClassName('slider-slide');
 
 showSlide(slideIndex);
 
@@ -41,8 +41,8 @@ function showSlide(n) {
 
 // JS video
 
-var video = document.getElementById("myVideo");
-var playPauseBtn = document.getElementById("playPauseBtn");
+const video = document.getElementById("myVideo");
+const playPauseBtn = document.getElementById("playPauseBtn");
 
 function togglePlayPause() {
     if (video.paused) {
@@ -109,18 +109,18 @@ function toggleAnswer(questionNumber) {
 // product detail
 
 document.addEventListener("DOMContentLoaded", () => {
-    const slider = document.querySelector(".slider");
-    const slides = Array.from(slider.getElementsByTagName("img"));
-    const thumbSlider = document.querySelector(".thumb-slider");
-    const thumbSlides = Array.from(thumbSlider.getElementsByTagName("img"));
+    var slider = document.querySelector(".slider");
+    var slidesImg = Array.from(slider.getElementsByTagName("img"));
+    var thumbSlider = document.querySelector(".thumb-slider");
+    var thumbSlides = Array.from(thumbSlider.getElementsByTagName("img"));
 
     let currentIndex = 0;
 
-    const setActiveSlide = (index) => {
-        slides.forEach((slide) => {
+    var setActiveSlide = (index) => {
+        slidesImg.forEach((slide) => {
             slide.style.opacity = "0";
         });
-        slides[index].style.opacity = "1";
+        slidesImg[index].style.opacity = "1";
 
         thumbSlides.forEach((thumbSlide) => {
             thumbSlide.classList.remove("active");
@@ -136,4 +136,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     setActiveSlide(currentIndex);
+});
+
+// quantity
+
+// Lấy các phần tử DOM
+const decreaseBtn = document.getElementsByClassName("decrease");
+const increaseBtn = document.getElementsByClassName("increase");
+const quantitySpan = document.getElementsByClassName("quantity");
+
+// Xử lý sự kiện khi nhấp vào nút giảm
+decreaseBtn.addEventListener('click', () => {
+    let quantity = parseInt(quantitySpan.textContent);
+    if (quantity > 0) {
+        quantity--;
+        quantitySpan.textContent = quantity;
+    }
+});
+
+// Xử lý sự kiện khi nhấp vào nút tăng
+increaseBtn.addEventListener('click', () => {
+    let quantity = parseInt(quantitySpan.textContent);
+    quantity++;
+    quantitySpan.textContent = quantity;
 });

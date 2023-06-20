@@ -153,6 +153,10 @@
   .contact-main .col-lg-3:nth-child(2) {
     margin-bottom: 20px;
   }
+
+  .product-detail-slider {
+    margin-right: 50px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -175,9 +179,16 @@
   .mb-45 {
     margin-bottom: 2rem;
   }
+
+  .mb-50,
   .mb-60 {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
+
+  .mt-80 {
+    margin-top: 50px;
+  }
+
   .slider-slide__item {
     bottom: 1.5rem;
   }
@@ -280,6 +291,77 @@
 
   .question {
     padding-right: 39px;
+  }
+
+  .product-detail-main {
+    flex-direction: column;
+  }
+
+  .product-detail-slider {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .product-detail-main {
+    margin-top: 40px;
+  }
+
+  .slider {
+    height: 100vw;
+  }
+
+  .product-info {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .number,
+  .btn-buy {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .product-button {
+    grid-template-columns: auto 50px;
+    grid-template-rows: 50px 50px 50px;
+  }
+
+  .product-gift {
+    font-size: 1.4rem;
+  }
+
+  .tab-product .tab-link {
+    padding: 10px 0;
+  }
+
+  .profuct-tab {
+    padding-top: 47px;
+    padding-bottom: 0;
+  }
+
+  .tab-content-main {
+    flex-direction: column;
+  }
+
+  .tab-content-left {
+    margin-bottom: 40px;
+  }
+
+  .tab-content-title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .tab-content-li {
+    letter-spacing: inherit;
+  }
+
+  .tab-content-li:last-child {
+    margin-bottom: 0;
+  }
+
+  .tab-content-img {
+    width: 100%;
   }
 }
 
@@ -385,5 +467,10 @@
 
   .filter-sort {
     margin-right: auto;
+  }
+
+  .shop-main {
+    grid-template-columns: repeat(4, 1fr);
+    overflow: auto;
   }
 }
