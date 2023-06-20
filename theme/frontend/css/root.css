@@ -131,12 +131,24 @@ h5,
   color: var(--gray2);
 }
 
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
 .cl-w {
   color: var(--white);
 }
 
 .cl-primary {
   color: var(--color);
+}
+
+.fw-400 {
+  font-weight: 400;
 }
 
 .text-center {
@@ -189,6 +201,10 @@ h5,
 
 .mb-60 {
   margin-bottom: 60px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
 }
 
 .mb-80 {
@@ -336,6 +352,11 @@ h5,
 .btn-border {
   padding: 12px 32px;
   border: 1px solid var(--color);
+}
+
+.btn-service:hover {
+  background: var(--white);
+  color: var(--color);
 }
 
 .product-love .img-love {
