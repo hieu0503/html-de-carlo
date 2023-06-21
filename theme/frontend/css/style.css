@@ -469,8 +469,11 @@
   color: #46484f;
 }
 .product-detail-main {
-  align-items: flex-start;
+  /* align-items: flex-start; */
   margin-top: 5rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 20px;
 }
 /* product detail */
 .tab-header.tab-product {
@@ -506,12 +509,12 @@
   left: 0;
   transform: translate(0, -50%);
 }
-.product-detail-slider {
-  width: 49%;
-  margin-right: 100px;
+.area1 {
+  grid-area: 1 / 1 / 2 / 7;
 }
-.product-info {
-  width: 42%;
+.area2 {
+  grid-area: 1 / 8 / 2 / 13;
+  margin-left: -20px;
 }
 /* CSS cho slider và ảnh thumb */
 .slider {

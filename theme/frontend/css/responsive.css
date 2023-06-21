@@ -312,6 +312,14 @@
   .tab-content-img {
     width: 100%;
   }
+
+  .area1 {
+    grid-area: 1 / 1 / 1 / 13;
+  }
+  .area2 {
+    grid-area: 2 / 1 / 2 / 13;
+    margin-left: 0;
+  }
 }
 @media (max-width: 576px) {
   .product-item {
