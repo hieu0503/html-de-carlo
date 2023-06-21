@@ -11,16 +11,16 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header position-relative">
         <div class="header-top position-relative text-center">
             <div class="header-top__title">
-                <p class="h5">free shipping in italy</p>
+                <p class="h5 cl-w">free shipping in italy</p>
             </div>
-            <div class="position-absolute header-top__lang">
+            <div class="position-absolute header-top__lang t-0 r-5 h-5">
                 <div id="lang_sel" class="position-relative">
-                    <ul class="nav-lang">
-                        <li class="nav-lang-item">
-                            <a class="lang_sel_sel icl-it" href="#">Italian</a>
+                    <ul class="nav-lang m-0 d-inline-block">
+                        <li class="nav-lang-item d-block position-relative">
+                            <a class="h5 cl-w lang_sel_sel position-relation d-block icl-it" href="#">Italian</a>
                             <ul class="icl-item">
                                 <li class="icl-item-lang icl-it"><a href="#" class="lang-link">Italian</a></li>
                                 <li class="icl-item-lang icl-en"><a href="#" class="lang-link">English</a></li>
@@ -30,43 +30,43 @@
                 </div>
             </div>
         </div>
-        <nav class="header-bottom d-flex navbar-expand-lg">
+        <nav class="header-bottom align-center justify-between z-2 position-relative d-flex navbar-expand-lg">
             <div class="header-logo">
-                <a class="inline-link" href="index.html"><img src="./theme/frontend/images/logo.png"
-                        class="header-logo-img" alt="logo"></a>
+                <a class="d-inline-block h100" href="index.html"><img src="./theme/frontend/images/logo.png"
+                        class="header-logo-img h100" alt="logo"></a>
             </div>
             <nav class="header-menu">
-                <ul class="menu-main d-flex">
-                    <li class="menu-item"><a class="menu-link uppercase" href="shop.html">Shop</a></li>
-                    <li class="menu-item"><a class="menu-link uppercase" href="ourHistory.html">Our History</a></li>
-                    <li class="menu-item"><a class="menu-link uppercase" href="careOfProduct.html">Jewelery Production</a></li>
-                    <li class="menu-item"><a class="menu-link uppercase" href="become.html">Become a dealer</a></li>
-                    <li class="menu-item"><a class="menu-link uppercase" href="contact.html">Contact</a></li>
+                <ul class="menu-main align-center d-flex">
+                    <li class="menu-item"><a class="menu-link h5 cl-black" href="shop.html">Shop</a></li>
+                    <li class="menu-item"><a class="menu-link h5 cl-black" href="ourHistory.html">Our History</a></li>
+                    <li class="menu-item"><a class="menu-link h5 cl-black" href="careOfProduct.html">Jewelery Production</a></li>
+                    <li class="menu-item"><a class="menu-link h5 cl-black" href="become.html">Become a dealer</a></li>
+                    <li class="menu-item"><a class="menu-link h5 cl-black" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-populated d-flex">
-                <div class="header-populated__item">
+                <div class="header-populated__item h-2 w-2">
                     <div class="header-search">
                         <button class="button-primary button-search">
                             <img src="./theme/frontend/images/search.png" alt="Search">
                         </button>
                     </div>
                 </div>
-                <div class="header-populated__item">
+                <div class="header-populated__item h-2 w-2">
                     <div class="header-love">
                         <button class="button-primary button-love">
                             <img src="./theme/frontend/images/love.png" alt="Love">
                         </button>
                     </div>
                 </div>
-                <div class="header-populated__item">
+                <div class="header-populated__item h-2 w-2">
                     <div class="header-user">
                         <button class="button-primary button-user">
                             <img src="./theme/frontend/images/user.png" alt="User">
                         </button>
                     </div>
                 </div>
-                <div class="header-populated__item">
+                <div class="header-populated__item h-2 w-2">
                     <div class="header-bag">
                         <button class="button-primary button-bag">
                             <img src="./theme/frontend/images/bag.png" alt="Bag">
@@ -74,31 +74,31 @@
                     </div>
                 </div>
                 <button class="header-button navbar-toggler collapsed" type="button">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon h-2 w-2"></span>
                 </button>
             </div>
         </nav>
-        <div class="overlay"></div>
+        <div class="overlay w100 h100 t-0 l-0 position-fixed z-1"></div>
     </header>
 
     <main class="main">
-        <section class="banner-page text-center">
+        <section class="banner-page bg-f5 text-center">
             <h1 class="h2 banner-page-title">frequantly asked question uppercases</h1>
         </section>
         <section class="faq p100">
             <div class="container-fluid">
-                <ul class="tab-header mb-60 d-flex">
-                    <li class="tab-link uppercase active" onclick="changeTab(event, 'tab1')">purchase</li>
-                    <li class="tab-link uppercase" onclick="changeTab(event, 'tab2')">refund</li>
-                    <li class="tab-link uppercase" onclick="changeTab(event, 'tab3')">payment</li>
-                    <li class="tab-link uppercase" onclick="changeTab(event, 'tab4')">covid 19</li>
-                    <li class="tab-link uppercase" onclick="changeTab(event, 'tab5')">product</li>
+                <ul class="tab-header mb-60 d-flex p-0 justify-center">
+                    <li class="tab-link border-none fw-600 uppercase active" onclick="changeTab(event, 'tab1')">purchase</li>
+                    <li class="tab-link border-none fw-600 uppercase" onclick="changeTab(event, 'tab2')">refund</li>
+                    <li class="tab-link border-none fw-600 uppercase" onclick="changeTab(event, 'tab3')">payment</li>
+                    <li class="tab-link border-none fw-600 uppercase" onclick="changeTab(event, 'tab4')">covid 19</li>
+                    <li class="tab-link border-none fw-600 uppercase" onclick="changeTab(event, 'tab5')">product</li>
                 </ul>
 
                 <div class="tab-content">
                     <div id="tab1" class="tab active">
                         <div class="tab-item">
-                            <h3 class="h4 question uppercase" onclick="toggleAnswer(1)">what are the shipping time and
+                            <h3 class="h4 question position-relative uppercase" onclick="toggleAnswer(1)">what are the shipping time and
                                 cost
                                 available of dercalo ?
                                 <span class="path1"></span>
@@ -137,7 +137,7 @@
                             </div>
                         </div>
                         <div class="tab-item">
-                            <h3 class="h4 question uppercase" onclick="toggleAnswer(2)">what are the shipping time and
+                            <h3 class="h4 question position-relative uppercase" onclick="toggleAnswer(2)">what are the shipping time and
                                 cost
                                 available of dercalo ?
                                 <span class="path1"></span>
@@ -176,7 +176,7 @@
                             </div>
                         </div>
                         <div class="tab-item">
-                            <h3 class="h4 question uppercase" onclick="toggleAnswer(3)">what are the shipping time and
+                            <h3 class="h4 question position-relative uppercase" onclick="toggleAnswer(3)">what are the shipping time and
                                 cost
                                 available of dercalo ?
                                 <span class="path1"></span>
@@ -215,7 +215,7 @@
                             </div>
                         </div>
                         <div class="tab-item">
-                            <h3 class="h4 question uppercase" onclick="toggleAnswer(4)">what are the shipping time and
+                            <h3 class="h4 question position-relative uppercase" onclick="toggleAnswer(4)">what are the shipping time and
                                 cost
                                 available of dercalo ?
                                 <span class="path1"></span>
@@ -254,7 +254,7 @@
                             </div>
                         </div>
                         <div class="tab-item">
-                            <h3 class="h4 question uppercase" onclick="toggleAnswer(5)">what are the shipping time and
+                            <h3 class="h4 question position-relative uppercase" onclick="toggleAnswer(5)">what are the shipping time and
                                 cost
                                 available of dercalo ?
                                 <span class="path1"></span>
@@ -296,7 +296,7 @@
 
                     <div id="tab2" class="tab">
                         <div class="tab-item">
-                            <h3 class="h4 question uppercase" onclick="toggleAnswer(6)">what are the shipping time and
+                            <h3 class="h4 question position-relative uppercase" onclick="toggleAnswer(6)">what are the shipping time and
                                 cost
                                 available of dercalo ? <span class="path1"></span>
                                 <span class="path2"></span>
@@ -334,7 +334,7 @@
                             </div>
                         </div>
                         <div class="tab-item">
-                            <h3 class="h4 question uppercase" onclick="toggleAnswer(7)">what are the shipping time and
+                            <h3 class="h4 question position-relative uppercase" onclick="toggleAnswer(7)">what are the shipping time and
                                 cost
                                 available of dercalo ? <span class="path1"></span>
                                 <span class="path2"></span>
@@ -375,7 +375,7 @@
 
                     <div id="tab3" class="tab">
                         <div class="tab-item">
-                            <h3 class="h4 question uppercase" onclick="toggleAnswer(8)">what are the shipping time and
+                            <h3 class="h4 question position-relative uppercase" onclick="toggleAnswer(8)">what are the shipping time and
                                 cost
                                 available of dercalo ? <span class="path1"></span>
                                 <span class="path2"></span>
@@ -413,7 +413,7 @@
                             </div>
                         </div>
                         <div class="tab-item">
-                            <h3 class="h4 question uppercase" onclick="toggleAnswer(9)">what are the shipping time and
+                            <h3 class="h4 question position-relative uppercase" onclick="toggleAnswer(9)">what are the shipping time and
                                 cost
                                 available of dercalo ? <span class="path1"></span>
                                 <span class="path2"></span>
@@ -451,7 +451,7 @@
                             </div>
                         </div>
                         <div class="tab-item">
-                            <h3 class="h4 question uppercase" onclick="toggleAnswer(10)">what are the shipping time and
+                            <h3 class="h4 question position-relative uppercase" onclick="toggleAnswer(10)">what are the shipping time and
                                 cost
                                 available of dercalo ? <span class="path1"></span>
                                 <span class="path2"></span>
@@ -492,7 +492,7 @@
 
                     <div id="tab4" class="tab">
                         <div class="tab-item">
-                            <h3 class="h4 question uppercase" onclick="toggleAnswer(11)">what are the shipping time and
+                            <h3 class="h4 question position-relative uppercase" onclick="toggleAnswer(11)">what are the shipping time and
                                 cost
                                 available of dercalo ? <span class="path1"></span>
                                 <span class="path2"></span>
@@ -532,7 +532,7 @@
                     </div>
                     <div id="tab5" class="tab">
                         <div class="tab-item">
-                            <h3 class="h4 question uppercase" onclick="toggleAnswer(12)">what are the shipping time and
+                            <h3 class="h4 question position-relative uppercase" onclick="toggleAnswer(12)">what are the shipping time and
                                 cost
                                 available of dercalo ? <span class="path1"></span>
                                 <span class="path2"></span>
@@ -570,7 +570,7 @@
                             </div>
                         </div>
                         <div class="tab-item">
-                            <h3 class="h4 question uppercase" onclick="toggleAnswer(13)">what are the shipping time and
+                            <h3 class="h4 question position-relative uppercase" onclick="toggleAnswer(13)">what are the shipping time and
                                 cost
                                 available of dercalo ? <span class="path1"></span>
                                 <span class="path2"></span>
@@ -611,8 +611,8 @@
                 </div>
 
                 <div class="any-question text-center mt-100">
-                    <p class="any-question__p">Do you have any other questions? 
-                        <a class="any-question__link text-underline" href="contact.html">Contact us now</a>
+                    <p class="any-question__p fw-600">Do you have any other questions? 
+                        <a class="any-question__link fw-600 cl-black text-underline" href="contact.html">Contact us now</a>
                     </p>
                 </div>
             </div>
@@ -622,14 +622,14 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-top">
+            <div class="footer-top text-center">
                 <div class="footer-logo">
-                    <a href="index.html" class="footer-logo-link">
+                    <a href="index.html" class="footer-logo-link d-inline-block">
                         <img src="./theme/frontend/images/logo-2.png" alt="logo" class="footer-logo-img">
                     </a>
                 </div>
             </div>
-            <div class="footer-mid">
+            <div class="footer-mid p70">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3 order-2 mb-60-m">
                         <div class="footer-mid__item">
@@ -691,21 +691,21 @@
                             <h2 class="footer-mid__item-title h5 uppercase mb-30 cl-w fw-400">subscribe for newletter</h2>
                             <div class="footer-mid__item-des">
                                 <form action="" class="form-footer d-flex mb-70">
-                                    <input type="email" name="email" class="footer-input" id=""
+                                    <input type="email" name="email" class="footer-input w100 border-none fw-400" id=""
                                         placeholder="Your Email">
-                                    <button type="submit" class="footer-button">Subscribe</button>
+                                    <button type="submit" class="footer-button border-none fw-400">Subscribe</button>
                                 </form>
                             </div>
                             <h2 class="footer-mid__item-title h5 uppercase mb-30 cl-w fw-400">social</h2>
                             <div class="footer-social">
-                                <ul class="footer-social-ul d-flex">
-                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                <ul class="footer-social-ul h-2 d-flex">
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link d-inline-block"><img
                                                 src="./theme/frontend/images/fb.png" alt=""></a></li>
-                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link d-inline-block"><img
                                                 src="./theme/frontend/images/ig.png" alt=""></a></li>
-                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link d-inline-block"><img
                                                 src="./theme/frontend/images/in.png" alt=""></a></li>
-                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link d-inline-block"><img
                                                 src="./theme/frontend/images/youtube.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -713,7 +713,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom text-center">
                 <p class="footer-bottom__text">
                     De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a
                     Ruballa 15, 50012, Bagno a Ripoli (FI), Italy

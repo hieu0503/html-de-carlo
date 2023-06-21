@@ -11,16 +11,16 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header position-relative">
         <div class="header-top position-relative text-center">
             <div class="header-top__title">
-                <p class="h5">free shipping in italy</p>
+                <p class="h5 cl-w">free shipping in italy</p>
             </div>
-            <div class="position-absolute header-top__lang">
+            <div class="position-absolute header-top__lang t-0 r-5 h-5">
                 <div id="lang_sel" class="position-relative">
-                    <ul class="nav-lang">
-                        <li class="nav-lang-item">
-                            <a class="lang_sel_sel icl-it" href="#">Italian</a>
+                    <ul class="nav-lang m-0 d-inline-block">
+                        <li class="nav-lang-item d-block position-relative">
+                            <a class="h5 cl-w lang_sel_sel position-relation d-block icl-it" href="#">Italian</a>
                             <ul class="icl-item">
                                 <li class="icl-item-lang icl-it"><a href="#" class="lang-link">Italian</a></li>
                                 <li class="icl-item-lang icl-en"><a href="#" class="lang-link">English</a></li>
@@ -30,43 +30,43 @@
                 </div>
             </div>
         </div>
-        <nav class="header-bottom d-flex navbar-expand-lg">
+        <nav class="header-bottom align-center justify-between z-2 position-relative d-flex navbar-expand-lg">
             <div class="header-logo">
-                <a class="inline-link" href="index.html"><img src="./theme/frontend/images/logo.png"
-                        class="header-logo-img" alt="logo"></a>
+                <a class="d-inline-block h100" href="index.html"><img src="./theme/frontend/images/logo.png"
+                        class="header-logo-img h100" alt="logo"></a>
             </div>
             <nav class="header-menu">
-                <ul class="menu-main d-flex">
-                    <li class="menu-item"><a class="menu-link uppercase" href="shop.html">Shop</a></li>
-                    <li class="menu-item"><a class="menu-link uppercase" href="ourHistory.html">Our History</a></li>
-                    <li class="menu-item"><a class="menu-link uppercase" href="careOfProduct.html">Jewelery Production</a></li>
-                    <li class="menu-item"><a class="menu-link uppercase" href="become.html">Become a dealer</a></li>
-                    <li class="menu-item"><a class="menu-link uppercase" href="contact.html">Contact</a></li>
+                <ul class="menu-main align-center d-flex">
+                    <li class="menu-item"><a class="menu-link h5 cl-black" href="shop.html">Shop</a></li>
+                    <li class="menu-item"><a class="menu-link h5 cl-black" href="ourHistory.html">Our History</a></li>
+                    <li class="menu-item"><a class="menu-link h5 cl-black" href="careOfProduct.html">Jewelery Production</a></li>
+                    <li class="menu-item"><a class="menu-link h5 cl-black" href="become.html">Become a dealer</a></li>
+                    <li class="menu-item"><a class="menu-link h5 cl-black" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-populated d-flex">
-                <div class="header-populated__item">
+                <div class="header-populated__item h-2 w-2">
                     <div class="header-search">
                         <button class="button-primary button-search">
                             <img src="./theme/frontend/images/search.png" alt="Search">
                         </button>
                     </div>
                 </div>
-                <div class="header-populated__item">
+                <div class="header-populated__item h-2 w-2">
                     <div class="header-love">
                         <button class="button-primary button-love">
                             <img src="./theme/frontend/images/love.png" alt="Love">
                         </button>
                     </div>
                 </div>
-                <div class="header-populated__item">
+                <div class="header-populated__item h-2 w-2">
                     <div class="header-user">
                         <button class="button-primary button-user">
                             <img src="./theme/frontend/images/user.png" alt="User">
                         </button>
                     </div>
                 </div>
-                <div class="header-populated__item">
+                <div class="header-populated__item h-2 w-2">
                     <div class="header-bag">
                         <button class="button-primary button-bag">
                             <img src="./theme/frontend/images/bag.png" alt="Bag">
@@ -74,18 +74,18 @@
                     </div>
                 </div>
                 <button class="header-button navbar-toggler collapsed" type="button">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon h-2 w-2"></span>
                 </button>
             </div>
         </nav>
-        <div class="overlay"></div>
+        <div class="overlay w100 h100 t-0 l-0 position-fixed z-1"></div>
     </header>
 
     <main class="main">
         <section class="collection-product">
             <div class="container">
-                <h1 class="h1 collection-product-title cl-w">rings</h1>
-                <div class="collection-product__descrition description">Lorem ipsum dolor sit amet, consectetur
+                <h1 class="h1 collection-product-title cl-w mb-5">rings</h1>
+                <div class="collection-product__descrition description cl-gray">Lorem ipsum dolor sit amet, consectetur
                     adipiscing
                     elit,
                     sed do eiusmod tempor incididu</div>
@@ -93,131 +93,131 @@
         </section>
         <section class="layout-collection p100">
             <div class="container">
-                <div class="breadcrumb-filter d-flex">
+                <div class="breadcrumb-filter d-flex justify-between align-center">
                     <h5 class="number description">
                         There are 30 products
                     </h5>
                     <div class="filter-block d-flex">
-                        <select class="filter-sort h5">
+                        <select class="filter-sort h5 border-none p-0 fw-600">
                             <option selected value="sort by: from a to z">sort by: from a to z</option>
                             <option value="sort by: from a to z">sort by: from z to a</option>
                             <option value="sort by: from a to z">sort by: newer</option>
                             <option value="sort by: from a to z">sort by: laster</option>
                         </select>
-                        <button class="btn filter-filter h5">filter</button>
+                        <button class="btn filter-filter h5 border-none p-0 fw-600">filter</button>
                     </div>
                 </div>
                 <div class="shop-collection shop-main">
-                    <div class="product-item">
-                        <img src="./theme/frontend/images/product.png" alt="">
-                        <div class="product-love">
+                    <div class="product-item position-relative">
+                        <img src="./theme/frontend/images/product.png" alt="" class="w100 mb-20">
+                        <div class="product-love t-2 r-2 position-absolute">
                             <button class="button-primary"><img class="img-love" src="./theme/frontend/images/love.png"
                                     alt=""></button>
                         </div>
-                        <div class="product-item__content">
-                            <h4 class="product-name h5 mb-20">
+                        <div class="product-item__content text-center">
+                            <h4 class="product-name h5 mb-10">
                                 Product Name
                             </h4>
-                            <p class="price">$99.99</p>
-                            <a href="shop.html" class="btn btn-border">Add to cart</a>
+                            <p class="price h5 text-center mb-20">$99.99</p>
+                            <a href="product-detail.html" class="btn btn-border">Add to cart</a>
                         </div>
                     </div>
-                    <div class="product-item">
-                        <img src="./theme/frontend/images/product.png" alt="">
-                        <div class="product-love">
+                    <div class="product-item position-relative">
+                        <img src="./theme/frontend/images/product.png" alt="" class="w100 mb-20">
+                        <div class="product-love t-2 r-2 position-absolute">
                             <button class="button-primary"><img class="img-love" src="./theme/frontend/images/love.png"
                                     alt=""></button>
                         </div>
-                        <div class="product-item__content">
-                            <h4 class="product-name h5 mb-20">
+                        <div class="product-item__content text-center">
+                            <h4 class="product-name h5 mb-10">
                                 Product Name
                             </h4>
-                            <p class="price">$99.99</p>
-                            <a href="shop.html" class="btn btn-border">Add to cart</a>
+                            <p class="price h5 text-center mb-20">$99.99</p>
+                            <a href="product-detail.html" class="btn btn-border">Add to cart</a>
                         </div>
                     </div>
-                    <div class="product-item">
-                        <img src="./theme/frontend/images/product.png" alt="">
-                        <div class="product-love">
+                    <div class="product-item position-relative">
+                        <img src="./theme/frontend/images/product.png" alt="" class="w100 mb-20">
+                        <div class="product-love t-2 r-2 position-absolute">
                             <button class="button-primary"><img class="img-love" src="./theme/frontend/images/love.png"
                                     alt=""></button>
                         </div>
-                        <div class="product-item__content">
-                            <h4 class="product-name h5 mb-20">
+                        <div class="product-item__content text-center">
+                            <h4 class="product-name h5 mb-10">
                                 Product Name
                             </h4>
-                            <p class="price">$99.99</p>
-                            <a href="shop.html" class="btn btn-border">Add to cart</a>
+                            <p class="price h5 text-center mb-20">$99.99</p>
+                            <a href="product-detail.html" class="btn btn-border">Add to cart</a>
                         </div>
                     </div>
-                    <div class="product-item">
-                        <img src="./theme/frontend/images/product.png" alt="">
-                        <div class="product-love">
+                    <div class="product-item position-relative">
+                        <img src="./theme/frontend/images/product.png" alt="" class="w100 mb-20">
+                        <div class="product-love t-2 r-2 position-absolute">
                             <button class="button-primary"><img class="img-love" src="./theme/frontend/images/love.png"
                                     alt=""></button>
                         </div>
-                        <div class="product-item__content">
-                            <h4 class="product-name h5 mb-20">
+                        <div class="product-item__content text-center">
+                            <h4 class="product-name h5 mb-10">
                                 Product Name
                             </h4>
-                            <p class="price">$99.99</p>
-                            <a href="shop.html" class="btn btn-border">Add to cart</a>
+                            <p class="price h5 text-center mb-20">$99.99</p>
+                            <a href="product-detail.html" class="btn btn-border">Add to cart</a>
                         </div>
                     </div>
-                    <div class="product-item">
-                        <img src="./theme/frontend/images/product.png" alt="">
-                        <div class="product-love">
+                    <div class="product-item position-relative">
+                        <img src="./theme/frontend/images/product.png" alt="" class="w100 mb-20">
+                        <div class="product-love t-2 r-2 position-absolute">
                             <button class="button-primary"><img class="img-love" src="./theme/frontend/images/love.png"
                                     alt=""></button>
                         </div>
-                        <div class="product-item__content">
-                            <h4 class="product-name h5 mb-20">
+                        <div class="product-item__content text-center">
+                            <h4 class="product-name h5 mb-10">
                                 Product Name
                             </h4>
-                            <p class="price">$99.99</p>
-                            <a href="shop.html" class="btn btn-border">Add to cart</a>
+                            <p class="price h5 text-center mb-20">$99.99</p>
+                            <a href="product-detail.html" class="btn btn-border">Add to cart</a>
                         </div>
                     </div>
-                    <div class="product-item">
-                        <img src="./theme/frontend/images/product.png" alt="">
-                        <div class="product-love">
+                    <div class="product-item position-relative">
+                        <img src="./theme/frontend/images/product.png" alt="" class="w100 mb-20">
+                        <div class="product-love t-2 r-2 position-absolute">
                             <button class="button-primary"><img class="img-love" src="./theme/frontend/images/love.png"
                                     alt=""></button>
                         </div>
-                        <div class="product-item__content">
-                            <h4 class="product-name h5 mb-20">
+                        <div class="product-item__content text-center">
+                            <h4 class="product-name h5 mb-10">
                                 Product Name
                             </h4>
-                            <p class="price">$99.99</p>
-                            <a href="shop.html" class="btn btn-border">Add to cart</a>
+                            <p class="price h5 text-center mb-20">$99.99</p>
+                            <a href="product-detail.html" class="btn btn-border">Add to cart</a>
                         </div>
                     </div>
-                    <div class="product-item">
-                        <img src="./theme/frontend/images/product.png" alt="">
-                        <div class="product-love">
+                    <div class="product-item position-relative">
+                        <img src="./theme/frontend/images/product.png" alt="" class="w100 mb-20">
+                        <div class="product-love t-2 r-2 position-absolute">
                             <button class="button-primary"><img class="img-love" src="./theme/frontend/images/love.png"
                                     alt=""></button>
                         </div>
-                        <div class="product-item__content">
-                            <h4 class="product-name h5 mb-20">
+                        <div class="product-item__content text-center">
+                            <h4 class="product-name h5 mb-10">
                                 Product Name
                             </h4>
-                            <p class="price">$99.99</p>
-                            <a href="shop.html" class="btn btn-border">Add to cart</a>
+                            <p class="price h5 text-center mb-20">$99.99</p>
+                            <a href="product-detail.html" class="btn btn-border">Add to cart</a>
                         </div>
                     </div>
-                    <div class="product-item">
-                        <img src="./theme/frontend/images/product.png" alt="">
-                        <div class="product-love">
+                    <div class="product-item position-relative">
+                        <img src="./theme/frontend/images/product.png" alt="" class="w100 mb-20">
+                        <div class="product-love t-2 r-2 position-absolute">
                             <button class="button-primary"><img class="img-love" src="./theme/frontend/images/love.png"
                                     alt=""></button>
                         </div>
-                        <div class="product-item__content">
-                            <h4 class="product-name h5 mb-20">
+                        <div class="product-item__content text-center">
+                            <h4 class="product-name h5 mb-10">
                                 Product Name
                             </h4>
-                            <p class="price">$99.99</p>
-                            <a href="shop.html" class="btn btn-border">Add to cart</a>
+                            <p class="price h5 text-center mb-20">$99.99</p>
+                            <a href="product-detail.html" class="btn btn-border">Add to cart</a>
                         </div>
                     </div>
 
@@ -228,14 +228,14 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-top">
+            <div class="footer-top text-center">
                 <div class="footer-logo">
-                    <a href="index.html" class="footer-logo-link">
+                    <a href="index.html" class="footer-logo-link d-inline-block">
                         <img src="./theme/frontend/images/logo-2.png" alt="logo" class="footer-logo-img">
                     </a>
                 </div>
             </div>
-            <div class="footer-mid">
+            <div class="footer-mid p70">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3 order-2 mb-60-m">
                         <div class="footer-mid__item">
@@ -297,21 +297,21 @@
                             <h2 class="footer-mid__item-title h5 uppercase mb-30 cl-w fw-400">subscribe for newletter</h2>
                             <div class="footer-mid__item-des">
                                 <form action="" class="form-footer d-flex mb-70">
-                                    <input type="email" name="email" class="footer-input" id=""
+                                    <input type="email" name="email" class="footer-input w100 border-none fw-400" id=""
                                         placeholder="Your Email">
-                                    <button type="submit" class="footer-button">Subscribe</button>
+                                    <button type="submit" class="footer-button border-none fw-400">Subscribe</button>
                                 </form>
                             </div>
                             <h2 class="footer-mid__item-title h5 uppercase mb-30 cl-w fw-400">social</h2>
                             <div class="footer-social">
-                                <ul class="footer-social-ul d-flex">
-                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                <ul class="footer-social-ul h-2 d-flex">
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link d-inline-block"><img
                                                 src="./theme/frontend/images/fb.png" alt=""></a></li>
-                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link d-inline-block"><img
                                                 src="./theme/frontend/images/ig.png" alt=""></a></li>
-                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link d-inline-block"><img
                                                 src="./theme/frontend/images/in.png" alt=""></a></li>
-                                    <li class="footer-social-li"><a href="#" class="footer-social-link"><img
+                                    <li class="footer-social-li"><a href="#" class="footer-social-link d-inline-block"><img
                                                 src="./theme/frontend/images/youtube.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -319,7 +319,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom text-center">
                 <p class="footer-bottom__text">
                     De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a
                     Ruballa 15, 50012, Bagno a Ripoli (FI), Italy

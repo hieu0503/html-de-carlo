@@ -107,56 +107,61 @@ function toggleAnswer(questionNumber) {
 
 
 // product detail
+// Lấy danh sách ảnh thumb
+var thumbs = document.querySelectorAll('.thumb-slider img');
 
-document.addEventListener("DOMContentLoaded", () => {
-    var slider = document.querySelector(".slider");
-    var slidesImg = Array.from(slider.getElementsByTagName("img"));
-    var thumbSlider = document.querySelector(".thumb-slider");
-    var thumbSlides = Array.from(thumbSlider.getElementsByTagName("img"));
+// Lặp qua danh sách ảnh thumb và thêm sự kiện click
+for (var i = 0; i < thumbs.length; i++) {
+    thumbs[i].addEventListener('click', function () {
+        var selectedThumb = this;
 
-    let currentIndex = 0;
+        // Xóa lớp active khỏi tất cả ảnh thumb
+        for (var j = 0; j < thumbs.length; j++) {
+            thumbs[j].classList.remove('active');
+        }
 
-    var setActiveSlide = (index) => {
-        slidesImg.forEach((slide) => {
-            slide.style.opacity = "0";
-        });
-        slidesImg[index].style.opacity = "1";
+        // Thêm lớp active vào ảnh thumb được click
+        selectedThumb.classList.add('active');
 
-        thumbSlides.forEach((thumbSlide) => {
-            thumbSlide.classList.remove("active");
-        });
-        thumbSlides[index].classList.add("active");
-    };
+        // Lấy đường dẫn ảnh lớn tương ứng từ thuộc tính alt
+        var largeImagePath = selectedThumb.alt;
 
-    thumbSlides.forEach((thumbSlide, index) => {
-        thumbSlide.addEventListener("click", () => {
-            currentIndex = index;
-            setActiveSlide(currentIndex);
-        });
+        // Lấy tất cả ảnh lớn trong slider
+        var largeImages = document.querySelectorAll('.slider img');
+
+        // Ẩn tất cả các ảnh lớn
+        for (var k = 0; k < largeImages.length; k++) {
+            largeImages[k].style.display = 'none';
+        }
+
+        // Hiển thị ảnh lớn tương ứng với ảnh thumb được chọn
+        var selectedLargeImage = document.querySelector('.slider img[src="' + largeImagePath + '"]');
+        selectedLargeImage.style.display = 'block';
     });
+}
 
-    setActiveSlide(currentIndex);
-});
 
 // quantity
 
 // Lấy các phần tử DOM
-const decreaseBtn = document.getElementsByClassName("decrease");
-const increaseBtn = document.getElementsByClassName("increase");
-const quantitySpan = document.getElementsByClassName("quantity");
+const decreaseBtn = document.querySelector('.decrease');
+const increaseBtn = document.querySelector('.increase');
+const quantitySpan = document.querySelector('.quantity');
 
-// Xử lý sự kiện khi nhấp vào nút giảm
-decreaseBtn.addEventListener('click', () => {
-    let quantity = parseInt(quantitySpan.textContent);
+let quantity = 0;
+
+function updateQuantity() {
+    quantitySpan.textContent = quantity;
+}
+
+decreaseBtn.addEventListener('click', function () {
     if (quantity > 0) {
         quantity--;
-        quantitySpan.textContent = quantity;
+        updateQuantity();
     }
 });
 
-// Xử lý sự kiện khi nhấp vào nút tăng
-increaseBtn.addEventListener('click', () => {
-    let quantity = parseInt(quantitySpan.textContent);
+increaseBtn.addEventListener('click', function () {
     quantity++;
-    quantitySpan.textContent = quantity;
+    updateQuantity();
 });
