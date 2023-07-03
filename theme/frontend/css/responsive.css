@@ -193,12 +193,19 @@
     min-height: 32rem;
     object-fit: cover;
   }
+  .shop-category__main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
   .btn-cate {
     bottom: 1rem;
   }
   .discover-media {
     width: 100%;
     height: calc(100vw - 3rem);
+    margin-top: 4rem;
   }
   .discover-main {
     padding: 6rem 3rem;
@@ -223,8 +230,11 @@
   .mb-15-m {
     margin-bottom: 1.5rem;
   }
-  .service-item.mb-20 {
-    margin-bottom: 2rem;
+  .service-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
   }
   .banner-page {
     padding: 57px 0 56px;

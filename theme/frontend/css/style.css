@@ -146,6 +146,13 @@
 .slider-next {
   background: url(../images/Arrow-right.png);
 }
+.shop-category__main,
+.service-main {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+}
 .shop-home {
   margin: 0 auto;
 }
@@ -205,9 +212,6 @@
   color: var(--gray2);
   margin-bottom: 3rem;
 }
-.service-item.mb-20 {
-  margin-bottom: 0;
-}
 .footer {
   background: var(--black);
 }
@@ -226,7 +230,7 @@
 .footer-mid__text {
   transition: all 0.3s;
 }
-.footer-mid__text:hover {
+a.footer-mid__text:hover {
   color: var(--white);
 }
 .footer__item-des-item:not(:last-child) {
@@ -623,4 +627,13 @@
   font-size: 1.6rem;
   line-height: 1.75em;
   color: #46484f;
+}
+.container-grid {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+}
+.grid10 {
+  grid-area: 1 / 2 / 2 / 12;
 }
